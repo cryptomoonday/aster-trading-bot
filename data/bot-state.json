@@ -1,0 +1,16 @@
+{
+  "position": {
+    "size": 120,
+    "side": "long",
+    "avgEntry": 1.22,
+    "unrealizedPnl": 0,
+    "lastUpdate": 1763681674643,
+    "pendingOrder": {
+      "side": "long",
+      "size": 120,
+      "timestamp": 1763681429875
+    }
+  },
+  "lastBarCloseTime": 1763681675047,
+  "timestamp": 1763681675109
+}

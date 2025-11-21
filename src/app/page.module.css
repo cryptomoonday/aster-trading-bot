@@ -1,0 +1,136 @@
+.page {
+  --bg: #030712;
+  --surface: #0f172a;
+  --border: rgba(255, 255, 255, 0.08);
+  --text-primary: #f8fafc;
+  --text-secondary: rgba(248, 250, 252, 0.72);
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.1);
+
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent),
+    var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans);
+  padding: 64px 24px 96px;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.25rem);
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 720px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  backdrop-filter: blur(12px);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.card p,
+.card li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.badge strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.specList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  }
+
+.sectionTitle {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  }
+
+.sectionBody {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sectionBody strong {
+  color: #e2e8f0;
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 48px 16px 64px;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+}

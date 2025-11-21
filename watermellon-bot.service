@@ -1,0 +1,18 @@
+[Unit]
+Description=Watermellon Trading Bot for AsterDEX
+After=network.target
+
+[Service]
+Type=simple
+User=aster
+WorkingDirectory=/path/to/aster-bot
+Environment="NODE_ENV=production"
+ExecStart=/usr/bin/npm run bot
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

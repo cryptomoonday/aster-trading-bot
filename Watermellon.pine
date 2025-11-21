@@ -1,0 +1,42 @@
+//@version=6
+indicator("Watermellon", overlay=true)
+
+//========== INPUTS ==========
+emaFastLen  = input.int(8,  "Fast EMA", minval=1)
+emaMidLen   = input.int(21, "Mid EMA",  minval=1)
+emaSlowLen  = input.int(48, "Slow EMA", minval=1)
+rsiLen      = input.int(14, "RSI Length", minval=2)
+rsiMinLong  = input.float(42.0, "Min RSI for long look", step=0.1)
+rsiMaxShort = input.float(58.0, "Max RSI for short look", step=0.1)
+
+//========== CORE SERIES ==========
+fastEma = ta.ema(close, emaFastLen)
+midEma  = ta.ema(close, emaMidLen)
+slowEma = ta.ema(close, emaSlowLen)
+rsiVal  = ta.rsi(close, rsiLen)
+
+//========== PLOTS (price stuff only) ==========
+plot(fastEma, title="EMA Fast", color=color.new(color.orange, 0))
+plot(midEma,  title="EMA Mid",  color=color.new(color.teal, 0))
+plot(slowEma, title="EMA Slow", color=color.new(color.purple, 0))
+
+//========== TREND STATES ==========
+bullStack = fastEma > midEma and midEma > slowEma
+bearStack = fastEma < midEma and midEma < slowEma
+
+//========== SIGNALS (LOOSE) ==========
+longLook  = bullStack and rsiVal > rsiMinLong
+shortLook = bearStack and rsiVal < rsiMaxShort
+
+// trigger once
+longTrig  = longLook and not longLook[1]
+shortTrig = shortLook and not shortLook[1]
+
+//========== MARKERS ==========
+plotshape(longTrig,  title="BUY",  style=shape.labelup,   text="BUY",  color=color.new(color.green, 0), location=location.belowbar, size=size.tiny)
+plotshape(shortTrig, title="SELL", style=shape.labeldown, text="SELL", color=color.new(color.red, 0),   location=location.abovebar, size=size.tiny)
+
+//========== ALERTS ==========
+alertcondition(longTrig,  title="BUY signal",  message="BUY signal on {{ticker}}")
+alertcondition(shortTrig, title="SELL signal", message="SELL signal on {{ticker}}")
+
