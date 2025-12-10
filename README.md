@@ -1,11 +1,11 @@
-# Watermellon Scalper Bot for AsterDEX - Automated Cryptocurrency Trading Bot
+# Aster Trading Bot
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> **Professional automated trading bot** that implements the TradingView "Watermellon" strategy (EMA 8/21/48 + RSI14) and Peach Hybrid strategy for **AsterDEX cryptocurrency exchange**. Built with Next.js and TypeScript for high-performance algorithmic trading with real-time market data processing.
+> **Aster Trading Bot** that implements the TradingView "Watermellon" strategy (EMA 8/21/48 + RSI14) and Peach Hybrid strategy for **AsterDEX cryptocurrency exchange**. Built with Next.js and TypeScript for high-performance algorithmic trading with real-time market data processing.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@
 
 ## Overview
 
-**Watermellon Scalper Bot** is an advanced **automated cryptocurrency trading bot** designed for the **AsterDEX exchange**. It recreates the popular TradingView "Watermellon" script using a sophisticated combination of **Exponential Moving Averages (EMA)** and **Relative Strength Index (RSI)** indicators. The bot processes real-time market data through WebSocket connections, builds synthetic 30-second bars from raw ticks, and executes trades based on technical analysis signals.
+**Aster Trading Bot** is an advanced **automated cryptocurrency trading bot** designed for the **AsterDEX exchange**. It recreates the popular TradingView "Watermellon" script using a sophisticated combination of **Exponential Moving Averages (EMA)** and **Relative Strength Index (RSI)** indicators. The bot processes real-time market data through WebSocket connections, builds synthetic 30-second bars from raw ticks, and executes trades based on technical analysis signals.
 
 ### What Makes This Bot Special?
 
