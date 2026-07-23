@@ -448,9 +448,9 @@ Contributions are welcome! If you'd like to contribute to this project:
 
 For support, questions, or collaboration opportunities:
 
-- **Twitter/X**: [@kinexbt](https://x.com/kinexbt)
-- **Telegram**: [@kinexbt](https://t.me/kinexbt)
-- **Email**: piter.jb0817@gmail.com
+- **Twitter/X**: [@kinexbt](https://x.com/cryptomoonday)
+- **Telegram**: [@kinexbt](https://t.me/cryptomoonday23)
+- **Discord**: [@cryptomoonday]
 
 ## Donation
 
