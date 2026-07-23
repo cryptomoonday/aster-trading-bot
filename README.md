@@ -450,7 +450,7 @@ For support, questions, or collaboration opportunities:
 
 - **Twitter/X**: [@kinexbt](https://x.com/cryptomoonday)
 - **Telegram**: [@kinexbt](https://t.me/cryptomoonday23)
-- **Discord**: [@cryptomoonday]
+- **Discord**: @cryptomoonday
 
 ## Donation
 
